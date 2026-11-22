@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MYSTER — Multidisciplinary Young Scientists Talk Exposure-Response</title>
+<meta name="description" content="MYSTER는 PK-PD를 연구하는 젊은 과학자들의 학문적 교류와 연구 활성화를 위한 정기적인 모임입니다.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b1f3f'/%3E%3Crect x='30' y='30' width='8' height='40' fill='%232f6bd8'/%3E%3Ctext x='44' y='66' font-family='sans-serif' font-weight='800' font-size='38' fill='%23ffffff'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="app">
+
+<nav class="nav" aria-label="주 메뉴">
+  <a href="#home" class="nav-brand"><span class="bar" aria-hidden="true"></span><span>MYSTER</span></a>
+  <a href="#home" data-nav="home">Home</a>
+  <a href="#about" data-nav="about">About</a>
+  <a href="#members" data-nav="members">Members</a>
+  <a href="#notice" data-nav="notice">Notice</a>
+  <a href="#gallery" data-nav="gallery">Gallery</a>
+  <a href="#contact" data-nav="contact">Contact</a>
+</nav>
+
+<main>
+
+<!-- ================= HOME ================= -->
+<section data-page="home">
+  <div class="hero on-navy">
+    <div class="slot hero-bg" aria-hidden="true">
+      <img src="assets/img/hero.jpg" alt="MYSTER 배경 이미지">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="container hero-inner">
+      <span class="kicker">PK-PD Young Scientists Colloquium · Since 2022</span>
+      <div class="hero-title-wrap">
+        <h1>MYSTER</h1>
+        <div class="fullname">
+          <span class="rule"></span>
+          <p>
+            <span><b>M</b>ultidisciplinary</span>
+            <span><b>Y</b>oung</span>
+            <span><b>S</b>cientists</span>
+            <span><b>T</b>alk</span>
+            <span><b>E</b>xposure-<b>R</b>esponse</span>
+          </p>
+        </div>
+      </div>
+      <p class="hero-desc">MYSTER는 PK-PD를 연구하는 젊은 과학자들의 학문적 교류와 연구 활성화를 위한 정기적인 모임입니다.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary btn-hero"><span>MYSTER 소개</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container home-section">
+    <div class="section-head">
+      <div class="titles">
+        <span class="kicker">Notice</span>
+        <h2>공지사항</h2>
+      </div>
+      <a href="#notice" class="more-link"><span>전체 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+    <div class="notice-cards" id="home-notices"></div>
+  </div>
+
+  <div class="container home-section last">
+    <div class="section-head">
+      <div class="titles">
+        <span class="kicker">Gallery</span>
+        <h2>갤러리</h2>
+      </div>
+      <a href="#gallery" class="more-link"><span>전체 보기</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+    <div class="gallery-preview" id="home-gallery"></div>
+  </div>
+
+  <div class="cta-band on-navy">
+    <div class="container">
+      <div class="titles">
+        <span class="kicker">Contact</span>
+        <h3>MYSTER 참여 및 문의</h3>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-cta"><span>Contact us</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUB PAGE HEADER ================= -->
+<section class="sub-hero on-navy" id="sub-hero" hidden>
+  <div class="container">
+    <span class="kicker" id="sub-kicker">About</span>
+    <h1 id="sub-title">About MYSTER</h1>
+    <div class="fullname" id="sub-fullname">
+      <span class="rule"></span>
+      <p>
+        <span><b>M</b>ultidisciplinary</span>
+        <span><b>Y</b>oung</span>
+        <span><b>S</b>cientists</span>
+        <span><b>T</b>alk</span>
+        <span><b>E</b>xposure-<b>R</b>esponse</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section data-page="about" hidden>
+  <div class="container about-grid">
+    <h2>PK-PD 연구자를 위한 정기 모임</h2>
+    <div class="about-text">
+      <p class="lead">MYSTER는 Multidisciplinary Young Scientists Talk Exposure-Response의 약자로,<br><span class="nowrap">PK-PD를</span> 연구하는 젊은 과학자들의 학문적 교류와 연구 활성화를 위한 정기적인 모임입니다.</p>
+      <p class="sub">2022년 6월 첫 모임 이후, 집단 약동학, 시스템 약리학, LLM 활용 등 다양한 주제의 연구가 발표되었습니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEMBERS (내용은 data/content.js) ================= -->
+<section data-page="members" hidden>
+  <div class="container members-wrap">
+    <div class="members-grid" id="members-grid"></div>
+  </div>
+</section>
+
+<!-- ================= NOTICE (내용은 data/content.js) ================= -->
+<section data-page="notice" hidden>
+  <div class="container page-body">
+    <div class="notice-head notice-row-grid"><span>No.</span><span>제목</span><span>등록일</span></div>
+    <div id="notice-list"></div>
+  </div>
+</section>
+
+<!-- ================= GALLERY (내용은 data/content.js) ================= -->
+<section data-page="gallery" hidden>
+  <div class="container page-body gallery-wrap" id="gallery-wrap"></div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section data-page="contact" hidden>
+  <div class="container page-body contact-grid">
+    <div class="contact-card">
+      <span class="label">Email</span>
+      <a class="value" href="mailto:myster@example.com">myster@example.com</a>
+    </div>
+    <div class="contact-card">
+      <span class="label">GitHub</span>
+      <a class="value" href="https://github.com/God-Junseong/MYSTER" target="_blank" rel="noopener">God-Junseong/MYSTER</a>
+    </div>
+    <div class="contact-card">
+      <span class="label">Hosted with</span>
+      <span class="value">PIPET</span>
+      <span class="note">Pharmacometrics Institute for Practical Education &amp; Training</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="brand">
+      <strong>MYSTER</strong>
+      <span>Multidisciplinary Young Scientists Talk Exposure-Response</span>
+    </div>
+    <span>© 2026 MYSTER. All rights reserved.</span>
+  </div>
+</footer>
+
+</div>
+<script src="data/content.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
