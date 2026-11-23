@@ -136,9 +136,9 @@
       $('#sub-kicker').textContent = sub.kicker;
       $('#sub-title').textContent = sub.title;
       $('#sub-fullname').hidden = r.page !== 'about';
-      document.title = sub.title + ' — MYSTER';
+      document.title = sub.kicker + ' — MYSTER';
     } else {
-      document.title = 'MYSTER — Multidisciplinary Young Scientists Talk Exposure-Response';
+      document.title = 'MYSTER';
     }
 
     if (r.page === 'notice') { openNotice = r.arg; renderNotices(); }
