@@ -7,7 +7,7 @@
   var NAV_OFFSET = 96;
   var PAGES = ['home', 'about', 'members', 'notice', 'gallery', 'contact'];
   var SUBS = {
-    about: { kicker: 'About', title: 'About MYSTER' },
+    about: { kicker: 'About', title: 'MYSTER' },
     members: { kicker: 'Members', title: 'Our Team' },
     notice: { kicker: 'Notice', title: '공지사항' },
     gallery: { kicker: 'Gallery', title: '갤러리' },
