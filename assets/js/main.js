@@ -111,7 +111,7 @@
     var el = document.getElementById('album-' + key);
     if (!el) { if (tries < 30) setTimeout(function () { scrollToAlbum(key, tries + 1); }, 50); return; }
     requestAnimationFrame(function () {
-      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET, behavior: 'smooth' });
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - Math.max(NAV_OFFSET, document.querySelector('.nav').offsetHeight + 16), behavior: 'smooth' });
     });
   }
 
